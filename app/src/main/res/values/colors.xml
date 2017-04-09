@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#f26c4f</color>
+    <color name="primary_light">#f17d64</color>
+    <color name="colorPrimaryDark">#f35d3d</color>
+    <color name="gray_dark">#6a6565</color>
+    <color name="icons_selected">#f3b7aa</color>
+    <color name="overWhite">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="blue">#5472AE</color>
+    <color name="color_background">#e1e1e1</color>
+    <color name="text_gray">#a5a4a4</color>
+    <string name="search_title">Search</string>
+    <string name="search_hint">Write Your Search</string>
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs >
+    <tab
+        id="@+id/tab_home"
+        icon="@drawable/icon_home_48"
+        title="Home" />
+    <tab
+        id="@+id/tab_classroom"
+        icon="@drawable/icon_classroom_48"
+        title="Class" />
+    <tab
+        id="@+id/tab_courses"
+        icon="@drawable/icon_courses_48"
+        title="Courses" />
+    <tab
+        id="@+id/tab_bis"
+        icon="@drawable/icon_bishop_48"
+        title="Games" />
+    <tab
+        id="@+id/tab_friends"
+        icon="@drawable/icon_profile_48"
+        title="Profile" />
+</tabs>
