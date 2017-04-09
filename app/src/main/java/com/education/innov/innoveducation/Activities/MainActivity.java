@@ -28,6 +28,6 @@ public class MainActivity  extends AppCompatActivity {
     }
 
     private PagerAdapter buildAdapter() {
-        return(new ClassePagerAdapter(this, getSupportFragmentManager()));
+        return(new ClassePagerAdapter(getSupportFragmentManager()));
     }
 }

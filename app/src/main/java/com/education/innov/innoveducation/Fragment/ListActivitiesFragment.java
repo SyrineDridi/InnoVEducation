@@ -27,18 +27,11 @@ public class ListActivitiesFragment extends Fragment {
     // TODO: Rename and change types and number of parameters
     public static ListActivitiesFragment newInstance(int param1, String param2) {
         ListActivitiesFragment fragment = new ListActivitiesFragment();
-        Bundle args = new Bundle();
-        fragment.setArguments(args);
+
         return fragment;
     }
 
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
 
-        }
-    }
 
     @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,

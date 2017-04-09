@@ -136,11 +136,11 @@
                 android:text="Comments"
                 android:textColor="@color/gray_dark" />
         </LinearLayout>
+
         <View
             android:layout_width="match_parent"
-            android:layout_height="2dp"
-            android:background="@android:color/darker_gray"
-            />
+            android:layout_height="1dp"
+            android:background="@color/color_background" />
         <!--  Password Label -->
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
@@ -157,22 +157,23 @@
             android:weightSum="1"
             android:paddingLeft="10dp">
 
-            <EditText android:id="@+id/EdtComment"
-                android:theme="@style/EditTextHintBlack"
+            <EditText
+                android:id="@+id/EdtComment"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:hint="Enter a comment"
-                android:foregroundTint="@color/black"
+                android:layout_weight="1"
                 android:backgroundTint="@color/colorPrimary"
+                android:foregroundTint="@color/black"
+                android:hint="Enter a comment"
                 android:textColor="@color/black"
-                android:layout_weight="1" />
+                android:theme="@style/EditTextHintBlack" />
 
             <Button
 
+                style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="53dp"
-                android:layout_height="wrap_content"
-                android:drawableLeft="@drawable/icon_ok_48"
-                />
+                android:layout_height="35dp"
+                android:drawableLeft="@drawable/icon_ok_48" />
         </LinearLayout>
     </LinearLayout>
 

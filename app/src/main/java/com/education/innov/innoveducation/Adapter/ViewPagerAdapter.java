@@ -4,6 +4,7 @@ import android.content.Context;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
+import android.support.v4.app.FragmentStatePagerAdapter;
 
 import com.education.innov.innoveducation.Fragment.LoginFragment;
 import com.education.innov.innoveducation.Fragment.RegisterFragment;
@@ -11,7 +12,7 @@ import com.education.innov.innoveducation.Fragment.RegisterFragment;
 /**
  * Created by Syrine on 03/04/2017.
  */
-public class ViewPagerAdapter extends FragmentPagerAdapter {
+public class ViewPagerAdapter extends FragmentStatePagerAdapter {
     private static int NUM_ITEMS = 2;
     private static Fragment fg;
     Context ctx = null;

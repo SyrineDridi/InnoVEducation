@@ -6,6 +6,7 @@ import android.os.Handler;
 import android.support.annotation.IdRes;
 import android.support.annotation.Nullable;
 import android.support.design.widget.NavigationView;
+import android.support.v4.app.Fragment;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
@@ -39,6 +40,7 @@ public class HomeActivity extends AppCompatActivity {
     DrawerLayout drawerLayout ;
     LeftFragmentNaviguation drawerLeftFragment ;
     RightFragmentNaviguation drawerRightFragment ;
+    private Fragment currentFragment=null;
 
     @Override
     protected void onResume() {
@@ -63,15 +65,20 @@ public class HomeActivity extends AppCompatActivity {
         bottomBar.setOnTabSelectListener(new OnTabSelectListener() {
             @Override
             public void onTabSelected(@IdRes int tabId) {
-
-
+               // if(currentFragment!=null)
+                   // getSupportFragmentManager().beginTransaction().remove(currentFragment);
                 switch (tabId) {
                     case R.id.tab_classroom:
-                        getSupportFragmentManager().beginTransaction().replace(R.id.container_id, new ClasseFragment()).commit();
+                        currentFragment=new ClasseFragment();
+                        getSupportFragmentManager().beginTransaction().replace(R.id.container_id, currentFragment).
+                                addToBackStack("gg").
+                                commit();
+
                         //      Toast.makeText(getApplicationContext(), tabId+"tabIdSelected", Toast.LENGTH_LONG).show();
                         break;
                     case R.id.tab_friends:
-                        getSupportFragmentManager().beginTransaction().replace(R.id.container_id, new ProfileFragment()).commit();
+                        currentFragment=new ProfileFragment();
+                        getSupportFragmentManager().beginTransaction().replace(R.id.container_id, currentFragment).commit();
                         break;
 
                     default:
