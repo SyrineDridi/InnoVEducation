@@ -38,16 +38,10 @@ public class CoursesFragment extends Fragment {
     // TODO: Rename and change types and number of parameters
     public static CoursesFragment  newInstance(int page, String title) {
         CoursesFragment fragment = new CoursesFragment();
-        Bundle args = new Bundle();
-        fragment.setArguments(args);
         return fragment;
     }
 
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-
-    }
+ 
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,

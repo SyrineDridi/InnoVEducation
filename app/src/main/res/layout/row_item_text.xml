@@ -132,11 +132,11 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/imageView" />
         </LinearLayout>
+
         <View
             android:layout_width="match_parent"
-            android:layout_height="2dp"
-            android:background="@android:color/darker_gray"
-            />
+            android:layout_height="1dp"
+            android:background="@color/color_background" />
         <!--  Password Label -->
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
@@ -165,10 +165,10 @@
 
             <Button
 
+                style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="53dp"
                 android:layout_height="wrap_content"
-                android:drawableLeft="@drawable/icon_ok_48"
-                />
+                android:drawableLeft="@drawable/icon_ok_48" />
         </LinearLayout>
     </LinearLayout>
 

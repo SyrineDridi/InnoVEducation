@@ -60,6 +60,6 @@ public class ClasseFragment extends Fragment {
     }
 
     private PagerAdapter buildAdapter() {
-        return (new ClassePagerAdapter(getActivity(), getActivity().getSupportFragmentManager()));
+        return (new ClassePagerAdapter(getActivity().getSupportFragmentManager()));
     }
 }
